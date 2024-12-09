@@ -11,16 +11,5 @@ export default function DashboardLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	return (
-		<main>
-			<Suspense>
-				<Header
-					hasSearch={false}
-					hasCart={false}
-					className="border-b-gray-200"
-				/>
-			</Suspense>
-			{children}
-		</main>
-	);
+	return <main>{children}</main>;
 }
