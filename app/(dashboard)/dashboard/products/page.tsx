@@ -29,7 +29,6 @@ export default function Products() {
 			/>
 		);
 
-	console.log('products', products);
 	return (
 		<div className="p-6 bg-gray-100 min-h-screen">
 			<div className="flex gap-[30%] mb-5">
