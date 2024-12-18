@@ -17,6 +17,12 @@ export default function Dashboard() {
 				</div>
 			</Link>
 
+			<Link href="/dashboard/ingredients">
+				<div className="border border-primary rounded-lg m-2 p-[100px] w-[200px] flex items-center justify-center cursor-pointer">
+					Ingredients
+				</div>
+			</Link>
+
 			<div className="border border-primary rounded-lg m-2 p-[100px] w-[200px] flex items-center justify-center cursor-pointer">
 				Users
 			</div>

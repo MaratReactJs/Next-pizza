@@ -1,8 +1,18 @@
 import { prisma } from '@/prisma/prisma-client';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function GET() {
-  const ingredients = await prisma.ingredient.findMany();
+	const ingredients = await prisma.ingredient.findMany();
 
-  return NextResponse.json(ingredients);
+	return NextResponse.json(ingredients);
+}
+
+export async function POST(req: NextRequest) {
+	const data = await req.json();
+
+	const ingredient = await prisma.ingredient.create({
+		data,
+	});
+
+	return NextResponse.json(ingredient);
 }

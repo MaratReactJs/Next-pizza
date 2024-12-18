@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: false,
 	images: {
-		domains: ['media.dodostatic.net'], // Разрешенные домены
+		domains: ['media.dodostatic.net', 'cdn.dodostatic.net', '1xleb.rus'], // Разрешенные домены
 	},
 };
 
